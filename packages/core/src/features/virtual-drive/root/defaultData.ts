@@ -55,8 +55,6 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 								file.setSource(source);
 							});
 						}
-					}).createFile("ProzillaOS", "png", (file) => {
-						file.setSource("/assets/banner-logo-title.png");
 					}).createFile("Icon", "svg", (file) => {
 						file.setSource("/icon.svg");
 					}).createFolder("Crumbling City", (crumblingCityFolder) => {
