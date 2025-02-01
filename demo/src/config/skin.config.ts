@@ -2,7 +2,7 @@ import { Skin } from "@prozilla-os/skins";
 import { removeBaseUrl } from "prozilla-os";
 
 const defaultSkin = new Skin({
-	defaultWallpaper: "/assets/wallpapers/abstract-mesh-gradient-orange-red-purple.png",
+	defaultWallpaper: "/assets/wallpapers/15208.jpg",
 });
 
 function cleanUrls(skin: Skin) {
