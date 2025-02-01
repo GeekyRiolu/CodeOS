@@ -54,7 +54,7 @@ export class SystemManager {
 		windowsConfig,
 		virtualDriveConfig,
 	}: SystemManagerParams) {
-		this.systemName = systemName ?? "ProzillaOS";
+		this.systemName = systemName ?? "CodeOS";
 		this.tagLine = tagLine ?? "Web-based Operating System";
 
 		this.skin = skin ?? new Skin();

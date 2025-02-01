@@ -1,7 +1,7 @@
 import { Theme } from "@prozilla-os/skins";
 import { FILE_SCHEMES } from "../../../constants/virtualDrive.const";
 import { SystemManager } from "../../system/systemManager";
-import { VirtualFile, VirtualFileLink } from "../file";
+import { VirtualFile } from "../file";
 import { VirtualFolder, VirtualFolderLink } from "../folder";
 import { VirtualRoot } from "./virtualRoot";
 
@@ -77,15 +77,6 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 					documentsFolder.setIconUrl(skin.folderIcons.text ?? skin.folderIcons.generic);
 					documentsFolder.createFile("text", "txt", (file) => {
 						file.setContent("Hello world!");
-					}).createFile("Info", "md", (file) => {
-						file.setProtected(true)
-							.setSource("/documents/info.md")
-							.setIconUrl(skin.fileIcons.info ?? skin.fileIcons.generic);
-						linkedPaths.info = file.path;
-					}).createFile("Prozilla", "md", (file) => {
-						file.setProtected(true)
-							.setSource("/documents/prozilla.md");
-						linkedPaths.links = file.path;
 					});
 					linkedPaths.documents = documentsFolder.path;
 				});
@@ -93,16 +84,10 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 
 			if (virtualDriveConfig.defaultData.includeDesktopFolder) {
 				userFolder.createFolder("Desktop", (desktopFolder) => {
-					desktopFolder.createFileLink("Info.md", (fileLink) => {
-						(fileLink as VirtualFileLink).setLinkedPath(linkedPaths.info);
-					}).createFileLink("Prozilla.md", (fileLink) => {
-						(fileLink as VirtualFileLink).setLinkedPath(linkedPaths.links);
-					}).createFolderLink("Pictures", (folderLink) => {
+					desktopFolder.createFolderLink("Pictures", (folderLink) => {
 						(folderLink as VirtualFolderLink).setLinkedPath(linkedPaths.images);
 					}).createFolderLink("Documents", (folderLink) => {
 						(folderLink as VirtualFolderLink).setLinkedPath(linkedPaths.documents);
-					}).createFile("Documentation", undefined, (file) => {
-						file.setSource(FILE_SCHEMES.external + "https://os.prozilla.dev/docs/");
 					});
 
 					appsConfig.apps.forEach((app) => {
