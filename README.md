@@ -45,9 +45,10 @@ Make sure you have the following installed:
 - Easy package management with `pnpm`.
 - Modular and scalable architecture.
 
-🏗 Built With
+## 🏗 Built With
 
-CodeOS is built with the help of the ProzillaOS open-source library, which provided many essential components for terminal and app management.
+CodeOS is built with the help of the **ProzillaOS** open-source library, which provided many essential components for terminal and app management.
+
 
 ---
 
