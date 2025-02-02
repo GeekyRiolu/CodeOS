@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #0D1114;">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-		<title>CodeOS | Web-based Operating System</title>
-		
-		<link rel="canonical" href="https://os.prozilla.dev/">
+    <title>CodeOS | Web-based Operating System</title>
 
-		<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=7">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=7">
-		<link rel="icon" href="/favicon.ico?v=7" sizes="any">
-		<link rel="icon" href="/icon.svg?v=7" type="image/svg+xml">
-		<link rel="icon" href="/icon.png?v=7" type="image/png">
-		<link rel="manifest" href="/site.webmanifest?v=5">
-		<meta name="apple-mobile-web-app-title" content="CodeOS">
-		<meta name="application-name" content="CodeOS">
-		<meta name="msapplication-TileColor" content="#0d1114">
-		<meta name="theme-color" content="#4D9CFF">
+    <link rel="canonical" href="https://os.prozilla.dev/">
 
-		<!-- Fonts -->
-		<link rel="preload" href="/assets/fonts/outfit/Outfit-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
-		<link rel="preload" href="/assets/fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="/icon.png" type="image/png">
 
+    <!-- Manifest File -->
+    <link rel="manifest" href="/site.webmanifest">
 
-		
-		
-	</head>
-	<body>
-		<noscript>You need to enable JavaScript to run CodeOS.</noscript>
-		<div id="root"></div>
+    <meta name="apple-mobile-web-app-title" content="CodeOS">
+    <meta name="application-name" content="CodeOS">
+    <meta name="msapplication-TileColor" content="#0D1114">
+    <meta name="theme-color" content="#4D9CFF">
 
-		<script type="module" src="/src/index.tsx"></script>
-	</body>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap">
+
+    <!-- Styles (If applicable) -->
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run CodeOS.</noscript>
+    <div id="root"></div>
+
+    <!-- Ensure React App Loads -->
+    <script type="module">
+        import RefreshRuntime from '/@react-refresh'
+        RefreshRuntime.injectIntoGlobalHook(window);
+        window.$RefreshReg$ = () => {};
+        window.$RefreshSig$ = () => (type) => type;
+        window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
+
+    <script type="module" src="/src/index.tsx"></script>
+</body>
 </html>
