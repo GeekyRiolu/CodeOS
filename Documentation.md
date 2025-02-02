@@ -140,7 +140,7 @@ We integrated Prozilla’s custom UI libraries to enhance performance and UI con
 
 - **Custom Themes & Personalization**: Users can choose from pre-defined themes or create custom themes using CSS variables. 🎨  
 - **Virtual File System Encryption**: File contents are encrypted using AES before being stored in IndexedDB. 🔐  
-- **Command Prompt / Terminal Emulator**: Implemented using xterm.js for a realistic terminal experience.  
+- **Command Prompt / Terminal Emulator**: Implemented using TypeScript for a realistic terminal experience.  
 - **Simple Game Applications**: Added Ball Maze & Minesweeper game as a pre-installed app. 🎮  
 - **Network Status Simulation**: A simulated network status indicator shows connectivity changes. 🌐  
 - **Built-in Browser**: A lightweight web browser allows users to browse the internet within CodeOS. 🌍  
