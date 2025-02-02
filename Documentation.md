@@ -125,7 +125,7 @@ We integrated Prozilla’s custom UI libraries to enhance performance and UI con
 - Implemented using `xterm.js` for a realistic terminal experience.
 
 ### 9.4 Simple Game Applications
-- Added a browser-based Tic-Tac-Toe game as a pre-installed app.
+- Added Ball Maze & Minesweeper game as a pre-installed app.
 
 ### 9.5 Network Status Simulation
 - A simulated network status indicator shows connectivity changes.
