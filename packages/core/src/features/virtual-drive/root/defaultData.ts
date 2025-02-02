@@ -55,9 +55,7 @@ export function loadDefaultData(systemManager: SystemManager, virtualRoot: Virtu
 								file.setSource(source);
 							});
 						}
-					}).createFile("Icon", "svg", (file) => {
-						file.setSource("/icon.svg");
-					}).createFolder("Crumbling City", (crumblingCityFolder) => {
+					}).createFolder("City of Destruction", (crumblingCityFolder) => {
 						crumblingCityFolder.createFile("Japan", "png", (file) => {
 							file.setSource("https://daisygames.org/media/Games/Crumbling%20City/CrumblingCityRelease.png");
 						}).createFile("City Center", "png", (file) => {
