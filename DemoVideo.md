@@ -1,6 +1,6 @@
-# Hackathon Project Demo
+# 🚀 Hackathon Project Demo
 
-## Demo Video
+## 🎥 Demo Video
 
 Check out the demo video of our project below:
 
