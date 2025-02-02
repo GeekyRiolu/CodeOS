@@ -52,5 +52,5 @@ CodeOS is built with the help of the **ProzillaOS** open-source library, which p
 
 ---
 
-💡 **CodeOS - Redefining Web-Based Operating Systems**
+
 
