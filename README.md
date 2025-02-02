@@ -16,7 +16,7 @@ Make sure you have the following installed:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/prozilla-os/ProzillaOS.git CodeOS
+   git clone https://github.com/GeekyRiolu/CodeOS.git
    cd CodeOS
    ```
 
