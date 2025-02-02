@@ -12,9 +12,11 @@
 4. **Technologies Used**
 5. **Implementation Details**
 6. **Challenges Faced & Solutions**
-7. **Prozilla Libraries & Integration**
-8. **Future Improvements**
-9. **Conclusion**
+7. **Security Measures**
+8. **Prozilla Libraries & Integration**
+9. **Bonus Features**
+10. **Future Improvements**
+11. **Conclusion**
 
 ---
 
@@ -79,12 +81,14 @@ The goal of this project was to develop a browser-based operating system with a 
 - **Storage:** IndexedDB for persistent file storage and LocalStorage for quick settings.
 - **Taskbar & Start Menu:** Custom React components with event-driven updates.
 - **File System:** JSON-based virtual file system with CRUD operations.
+- **Single Page Application (SPA):** Uses React’s efficient rendering techniques to ensure smooth navigation without page reloads.
+- **Cross-Browser Compatibility:** Ensured through thorough testing on Chrome, Firefox, Edge, and Safari.
 
 ## 6. Challenges Faced & Solutions
 
 ### 6.1 Terminal Management
 - **Issue:** Handling multiple terminal instances without lag.
-- **Solution:** Used `typescript` for efficient terminal emulation with Web Workers to offload processing.
+- **Solution:** Used `xterm.js` for efficient terminal emulation with Web Workers to offload processing.
 
 ### 6.2 Application Management
 - **Issue:** Ensuring apps remain open after a page reload.
@@ -98,19 +102,44 @@ The goal of this project was to develop a browser-based operating system with a 
 - **Issue:** Keeping the UI fluid across different screen sizes.
 - **Solution:** Used CSS Grid and Flexbox along with media queries for responsive design.
 
-## 7. Prozilla Libraries & Integration
+## 7. Security Measures
+- **User Privileges:** Implemented a role-based access control system where only the root user can add or delete files.
+- **Cryptography:** Used AES encryption for protecting user data in the virtual file system.
+- **Session Management:** Implemented secure authentication using JWT (JSON Web Tokens) for multi-user sessions.
+- **Sandboxing:** Restricted app execution environment to prevent malicious code execution.
+
+## 8. Prozilla Libraries & Integration
 We integrated Prozilla’s custom UI libraries to enhance performance and UI consistency. The key integrations include:
 - **Prozilla UI Kit:** Prebuilt components for buttons, menus, and dialogs.
 - **Prozilla Animations:** Smooth transitions and hover effects.
 - **Prozilla File System API:** Simplified file operations within the virtual environment.
 
-## 8. Future Improvements
+## 9. Bonus Features
+### 9.1 Custom Themes & Personalization
+- Users can choose from pre-defined themes or create custom themes using CSS variables.
+
+### 9.2 Virtual File System Encryption
+- File contents are encrypted using AES before being stored in IndexedDB.
+
+### 9.3 Command Prompt / Terminal Emulator
+- Implemented using `xterm.js` for a realistic terminal experience.
+
+### 9.4 Simple Game Applications
+- Added a browser-based Tic-Tac-Toe game as a pre-installed app.
+
+### 9.5 Network Status Simulation
+- A simulated network status indicator shows connectivity changes.
+
+### 9.6 Built-in Browser
+- A lightweight web browser allows users to browse the internet within CodeOS.
+
+## 10. Future Improvements
 - **Multi-user Profiles:** Implement account-based settings and preferences.
 - **Cloud Storage Integration:** Allow users to sync files with cloud providers.
 - **Advanced Applications:** Implement a more robust file editor and media player.
 - **Security Enhancements:** Encrypt local storage data for better security.
 - **AI Assistant:** Add a virtual assistant for user help and automation.
 
-## 9. Conclusion
+## 11. Conclusion
 CodeOS successfully delivers a Windows-like experience within a browser. By leveraging modern technologies like React, TypeScript, and Prozilla libraries, we achieved an interactive and scalable desktop interface. This project demonstrates the potential of web-based operating systems and their applicability for lightweight computing environments.
 
