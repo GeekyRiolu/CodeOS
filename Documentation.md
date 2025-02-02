@@ -1,4 +1,3 @@
-Here’s a version of your document with emojis added for a more interactive feel:
 
 ---
 
@@ -164,4 +163,3 @@ CodeOS successfully delivers a Windows-like experience within a browser. By leve
 
 ---
 
-Hope that adds some fun to the presentation! 😊
